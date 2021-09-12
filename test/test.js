@@ -41,6 +41,6 @@ describe('cvTranslateError', function() {
     it('translates error correctly', async function () {
         const errString = await errorExample();
         assert.deepStrictEqual(errString, 
-            "Exception: OpenCV(4.3.0) /code/modules/imgproc/src/contours.cpp:197: error: (-210:Unsupported format or combination of formats) [Start]FindContours supports only CV_8UC1 images when mode != CV_RETR_FLOODFILL otherwise supports CV_32SC1 images only in function 'cvStartFindContours_Impl'\n");
+            "Exception: OpenCV(4.5.3) /code/modules/imgproc/src/contours.cpp:197: error: (-210:Unsupported format or combination of formats) [Start]FindContours supports only CV_8UC1 images when mode != CV_RETR_FLOODFILL otherwise supports CV_32SC1 images only in function 'cvStartFindContours_Impl'\n");
     });
 });
