@@ -12,8 +12,8 @@ This module has zero dependencies.
 
 | Code | Input | Output |
 |---|---|---|
-| [dilation.js](https://github.com/echamudi/opencv-wasm/blob/master/examples/dilation.js) (node)| ![image sample 1](https://github.com/echamudi/opencv-wasm/blob/master/examples/input/image-sample-1.jpg?raw=true) | ![dilation](https://github.com/echamudi/opencv-wasm/blob/master/examples/expected-output/dilation.png?raw=true) |
-| [templateMatching.js](https://github.com/echamudi/opencv-wasm/blob/master/examples/templateMatching.js) (node) | source:<br>![image sample 2](https://github.com/echamudi/opencv-wasm/blob/master/examples/input/image-sample-2.png?raw=true) <br>template:<br> ![image sample 2 template](https://github.com/echamudi/opencv-wasm/blob/master/examples/input/image-sample-2-template.png?raw=true) | ![template matching](https://github.com/echamudi/opencv-wasm/blob/master/examples/expected-output/template-matching.png?raw=true) |
+| [dilation.js](./examples/dilation.js) (node) [dilation.ts](./examples/deno/dilation.ts) (deno)| ![image sample 1](./examples/input/image-sample-1.jpg) | ![dilation](./examples/expected-output/dilation.png) |
+| [templateMatching.js](./examples/templateMatching.js) (node) [templateMatching.ts](./examples/deno/templateMatching.ts) (deno)| source:<br>![image sample 2](./examples/input/image-sample-2.png) <br>template:<br> ![image sample 2 template](./examples/input/image-sample-2-template.png) | ![template matching](./examples/expected-output/template-matching.png) |
 
 ## Installation
 
