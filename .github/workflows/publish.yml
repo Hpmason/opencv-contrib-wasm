@@ -34,9 +34,11 @@ jobs:
       
       - uses: JS-DevTools/npm-publish@v1
         with:
+          scope: "public"
           token: ${{ secrets.NPM_ACCESS_TOKEN }}
 
       - uses: JS-DevTools/npm-publish@v1
         with:
+          scope: "public"
           registry: https://npm.pkg.github.com
           token: ${{ secrets.GITHUB_TOKEN }}
