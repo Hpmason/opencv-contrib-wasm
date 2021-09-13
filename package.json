@@ -38,8 +38,5 @@
     "js-beautify": "^1.13.4",
     "mocha": "^7.1.2",
     "pixelmatch": "^5.2.0"
-  },
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
   }
 }

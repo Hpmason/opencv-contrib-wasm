@@ -32,18 +32,11 @@ jobs:
       - run: (cd ./build_wasm_test/bin && node tests.js)
         name: Run test provided by OpenCV
       
-      - run: npm publish --access public
-        name: Publish to npm registry
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN  }}
-        
-      - name: Set up Node for Github Pkg Registry 
-        uses: actions/setup-node@v1
+      - uses: JS-DevTools/npm-publish@v1
         with:
-          node-version: '14.x'
-          registry-url: 'https://npm.pkg.github.com'
-      - run: npm publish 
-        name: Publish to Github Packages
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
+          token: ${{ secrets.NPM_ACCESS_TOKEN }}
 
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          registry: https://npm.pkg.github.com
+          token: ${{ secrets.GITHUB_TOKEN }}
