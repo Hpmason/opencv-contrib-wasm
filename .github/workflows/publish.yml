@@ -31,8 +31,13 @@ jobs:
 
       - run: (cd ./build_wasm_test/bin && node tests.js)
         name: Run test provided by OpenCV
-
-      - run: npm --scope=@hpmason --registry="https://npm.pkg.github.com" publish 
+      
+      - name: Set up Node for Github Pkg Regirstry 
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+          registry-url: 'https://npm.pkg.github.com'
+      - run: npm publish 
         name: Publish to Github Packages
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
