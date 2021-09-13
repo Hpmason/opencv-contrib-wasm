@@ -1,5 +1,5 @@
-# OpenCV-Wasm
-
+# OpenCV-Contrib-Wasm
+*(This is a fork of [OpenCV-Wasm](https://github.com/echamudi/opencv-wasm) with the added opencv_contrib modules)*
 [![Build Status](https://travis-ci.org/echamudi/opencv-wasm.svg?branch=master)](https://travis-ci.org/echamudi/opencv-wasm)
 
 Precompiled OpenCV to JavaScript + WebAssembly for node.js and deno environment. 🦕
