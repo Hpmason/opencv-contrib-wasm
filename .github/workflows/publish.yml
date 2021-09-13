@@ -32,7 +32,7 @@ jobs:
       - run: (cd ./build_wasm_test/bin && node tests.js)
         name: Run test provided by OpenCV
 
-      - run: npm publish
+      - run: npm --scope=@hpmason --registry="https://npm.pkg.github.com" publish 
         name: Publish to Github Packages
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
